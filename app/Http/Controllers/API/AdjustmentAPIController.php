@@ -35,9 +35,9 @@ class AdjustmentAPIController extends AppBaseController
 
         $adjustments = $this->adjustmentRepository;
 
-        if ($request->get('warehouse_id')) {
-            $adjustments->where('warehouse_id', $request->get('warehouse_id'));
-        }
+        // if ($request->get('warehouse_id')) {
+        //     $adjustments->where('warehouse_id', $request->get('warehouse_id'));
+        // }
 
         $adjustments = $adjustments->paginate($perPage);
 

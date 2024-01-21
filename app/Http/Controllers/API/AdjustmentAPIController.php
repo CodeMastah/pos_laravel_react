@@ -33,7 +33,7 @@ class AdjustmentAPIController extends AppBaseController
     {
         $perPage = getPageSize($request);
 
-        $adjustments = $this->adjustmentRepository;
+        // $adjustments = $this->adjustmentRepository;
 
         // if ($request->get('warehouse_id')) {
         //     $adjustments->where('warehouse_id', $request->get('warehouse_id'));
